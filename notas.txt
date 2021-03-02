@@ -1,0 +1,41 @@
+web service:
+    intercambian datos entre aplicaciones via web usalmente usando http
+    existen estandares como:
+        XML, SOAP, REST, GRAPHQL
+    las mas modernas son REST y GRAPHQL
+    el web service es cuando se permite la conexion
+    todos los web services son apis
+API:   
+    funciones o metodos que ofrece una libreria para ser utilizada por otro software y acceder a sus recursos
+    no siempre es web
+    no todas las apis son web services
+    se tienen que enviar peticiones estructuradas para acceder al servicio
+REST:
+    representational state transfer
+    un patron para hacer un API, nos da lineamientos
+    define como se accede a los recursos de un api existente
+    si es REST debe responder a los request de http 
+    CADA API ES DIFERENTE
+    cada REST API contara con endpoints (urls) es a donde la mandamos a llamar para realizar operaciones CRUD
+    GET /ClIENTES obtener todos los clientes 
+    GET /CLIENTES/10 obtiene el cliente con el id 10
+    POST /CLIENTES añade un nuevo cliente
+    PUT /CLIENTES/10 actualiza el cliente con el id 10
+    DELETE /CLIENTES/10 elimina el cliente con el id 10
+verbos HTTP:   
+    GET-obtener 
+    POST-enviar
+    PUT-actualizar
+    DELETE-eliminar
+    PATCH-actualizar parcialmente 
+crear mongo local:
+    descargarlo https://www.mongodb.com/try/download/community
+    añadir al path C:\Program Files\MongoDB\Server\4.4\bin  
+    md \data
+    md \data\db es donde mongodb estara creando las bases de datos
+    mongod arranca el servicio
+    mongo abre el shell de mongo, aqui se crean conexiones, bases de datos, revisar querys
+Fragment:
+    Para no poner divs de mas en el return y podamos devolver multiples hijos
+{} en react todo lo que este dentro lo interpreta como javascript 
+con react router DOM no se utilzia href , se usa Link
